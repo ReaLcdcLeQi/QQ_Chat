@@ -11,7 +11,7 @@ import javax.swing.SwingConstants;
 import cn.edu.ldu.socket.Server;
 
 /**
- * ·şÎñÆ÷½çÃæ
+ * æœåŠ¡å™¨ç•Œé¢
  */
 public class StartServer extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
@@ -21,15 +21,15 @@ public class StartServer extends JFrame implements ActionListener {
 	
 	public StartServer() {
 		setLayout(new FlowLayout());
-		startServer_btn = new JButton("¿ªÆô·şÎñÆ÷");
-		endServer_btn = new JButton("¹Ø±Õ·şÎñÆ÷");
-		p = new JLabel("<html><font size=5 color=blue>ĞÅÏ¢ÓëµçÆø¹¤³ÌÑ§Ôº</font><br/>"
-				+ "<font size=5 color=blue>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Èí¹¤1403-Ê·À¤</font><br/>"
+		startServer_btn = new JButton("å¼€å¯æœåŠ¡å™¨");
+		endServer_btn = new JButton("å…³é—­æœåŠ¡å™¨");
+		p = new JLabel("<html><font size=5 color=blue>ä¿¡æ¯ä¸è½¯ä»¶å·¥ç¨‹å­¦é™¢</font><br/>"
+				+ "<font size=5 color=blue>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ä¿¡è½¯0228-æˆšä¹</font><br/>"
 				+ "<font size=5 color=blue>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20142203717</font></html>",SwingConstants.CENTER);
 		add(startServer_btn);
 		add(endServer_btn);
 		add(p);
-		setTitle("qq·şÎñ¶Ë");
+		setTitle("qqæœåŠ¡ç«¯");
 		setSize(300, 200);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,10 +46,10 @@ public class StartServer extends JFrame implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
-		//µ±µã»÷ÁË¿ªÆô·şÎñÆ÷°´Å¥±ãĞÂ¿ªÆôÒ»¸öÏß³Ì ¿ªÆô¶¯·şÎñÆ÷
+		//å½“ç‚¹å‡»äº†å¼€å¯æœåŠ¡å™¨æŒ‰é’®ä¾¿æ–°å¼€å¯ä¸€ä¸ªçº¿ç¨‹ å¼€å¯åŠ¨æœåŠ¡å™¨
 		if (e.getSource() == startServer_btn) {
 			new startServerThread().start();
-			JOptionPane.showMessageDialog(null, "qq·şÎñÆ÷¿ªÆô³É¹¦£¬ÇëÁ¬½Ó...");
+			JOptionPane.showMessageDialog(null, "qqæœåŠ¡å™¨å¼€å¯æˆåŠŸï¼Œè¯·è¿æ¥...");
 		}
 		if (e.getSource() == endServer_btn) {
 			System.exit(0);
